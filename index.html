@@ -1,20 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chanchal Rai - Portfolio</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f7f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #004aad;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin-top: 5px;
+            font-weight: 300;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+        section {
+            margin-bottom: 40px;
+            background: white;
+            padding: 25px 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+        }
+        section h2 {
+            border-bottom: 3px solid #004aad;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            color: #004aad;
+        }
+        /* Skills list */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background: #d1e3ff;
+            color: #004aad;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        /* Projects */
+        .project {
+            margin-bottom: 15px;
+        }
+        .project a {
+            color: #004aad;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
+        /* Contact */
+        .contact-info p {
+            margin: 8px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #004aad;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            main {
+                margin: 20px 10px;
+                padding: 0 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, I'm [Chanchal Rai]</h1>
-    <p>I'm learning Web Development</p>
-    <h2>projects</h2>
-    <ul>
-        <li>Basic HTML Page</li>
-        <li>Personal Portfolio Website</li>
-    </ul>
-    <h2>Contact</h2>
-    <p>Email:chanchalrai411@gmail.com</p>
-    <a href="https://www.linkedin.com/in/chanchal-rai-ba26b1328"target="_blank">visit my LinkedIn</a><br>
-    <a href="https://github.com/chanchal121-12"target="_blank">visit my GitHub</a>
+
+<header>
+    <h1>Chanchal Rai</h1>
+    <p>Web Developer | Programmer | Learner</p>
+</header>
+
+<main>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am Chanchal Rai, a passionate web developer learning frontend and backend development. I enjoy creating websites and exploring new technologies. Currently focusing on HTML, CSS, JavaScript, and Django.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Python</span>
+            <span class="skill">Django</span>
+            <span class="skill">Git & GitHub</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <a href="https://github.com/chanchal121-12/web-dev-course" target="_blank" rel="noopener">Web Development Course Repo</a>
+            <p>My learning projects and exercises for frontend and backend web development.</p>
+        </div>
+        <!-- You can add more projects here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:chanchalrai411@gmail.com">chanchalrai411@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/chanchal121-12" target="_blank" rel="noopener">github.com/chanchal121-12</a></p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    &copy; 2025 Chanchal Rai | All Rights Reserved
+</footer>
+
 </body>
 </html>
