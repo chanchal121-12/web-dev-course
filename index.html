@@ -1,152 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Chanchal Rai - Portfolio</title>
-    <style>
-        /* Reset some default styles */
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            background-color: #f4f7f8;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #004aad;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            margin-top: 5px;
-            font-weight: 300;
-        }
-        main {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 0 15px;
-        }
-        section {
-            margin-bottom: 40px;
-            background: white;
-            padding: 25px 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
-        }
-        section h2 {
-            border-bottom: 3px solid #004aad;
-            padding-bottom: 8px;
-            margin-bottom: 15px;
-            color: #004aad;
-        }
-        /* Skills list */
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .skill {
-            background: #d1e3ff;
-            color: #004aad;
-            padding: 8px 14px;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-        /* Projects */
-        .project {
-            margin-bottom: 15px;
-        }
-        .project a {
-            color: #004aad;
-            font-weight: 600;
-            text-decoration: none;
-        }
-        .project a:hover {
-            text-decoration: underline;
-        }
-        /* Contact */
-        .contact-info p {
-            margin: 8px 0;
-        }
-        footer {
-            text-align: center;
-            padding: 15px 0;
-            background-color: #004aad;
-            color: white;
-            font-size: 0.9rem;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chanchal Rai - Portfolio</title>
+    
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
 
-        /* Responsive */
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            main {
-                margin: 20px 10px;
-                padding: 0 10px;
-            }
-        }
-    </style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f7f8;
+      color: #333;
+    }
+
+    /* HEADER with background image */
+    header {
+      background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    nav {
+      background-color: #004aad;
+      text-align: center;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      color: #004aad;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #004aad;
+      padding-bottom: 10px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: #d1e3ff;
+      color: #004aad;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .project a {
+      font-weight: bold;
+      color: #004aad;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #004aad;
+      color: white;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
+    }
+  </style>
 </head>
 <body>
 
+<!-- Header -->
 <header>
-    <h1>Chanchal Rai</h1>
-    <p>Web Developer | Programmer | Learner</p>
+  <h1>Chanchal Rai</h1>
+  <p>Web Developer | Programmer | Learner</p>
 </header>
 
+<!-- Navigation -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- Main Content -->
 <main>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am Chanchal Rai, a passionate web developer learning frontend and backend development. I enjoy creating websites and exploring new technologies. Currently focusing on HTML, CSS, JavaScript, and Django.</p>
-    </section>
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>Hello! I am Chanchal Rai, a passionate web developer currently learning frontend and backend development. I love creating websites using HTML, CSS, JavaScript, and Django. I’m also practicing full stack development during my internship.</p>
+  </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-list">
-            <span class="skill">HTML</span>
-            <span class="skill">CSS</span>
-            <span class="skill">JavaScript</span>
-            <span class="skill">Python</span>
-            <span class="skill">Django</span>
-            <span class="skill">Git & GitHub</span>
-        </div>
-    </section>
+  <section id="skills" data-aos="fade-right">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">Python</span>
+      <span class="skill">Django</span>
+      <span class="skill">Git & GitHub</span>
+    </div>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <a href="https://github.com/chanchal121-12/web-dev-course" target="_blank" rel="noopener">Web Development Course Repo</a>
-            <p>My learning projects and exercises for frontend and backend web development.</p>
-        </div>
-        <!-- You can add more projects here -->
-    </section>
+  <section id="projects" data-aos="fade-left">
+    <h2>Projects</h2>
+    <div class="project">
+      <a href="https://github.com/chanchal121-12/web-dev-course" target="_blank">Web Development Course Repo</a>
+      <p>This includes my learning files and basic websites I built while learning web development.</p>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:chanchalrai411@gmail.com">chanchalrai411@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/chanchal121-12" target="_blank" rel="noopener">github.com/chanchal121-12</a></p>
-        </div>
-    </section>
-
+  <section id="contact" data-aos="fade-up">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:chanchalrai411@gmail.com">chanchalrai411@gmail.com</a></p>
+  <p><i class="fab fa-github" style="color:#000;"></i> 
+     <a href="https://github.com/chanchal121-12" target="_blank">github.com/chanchal121-12</a>
+  </p>
+  <p><i class="fab fa-linkedin" style="color:#0e76a8;"></i> 
+     <a href="https://www.linkedin.com/in/chanchal-rai-ba26b1328" target="_blank">linkedin.com/in/chanchal-rai-ba26b1328</a>
+  </p>
+</section>
+    
 </main>
 
+<!-- Footer -->
 <footer>
-    &copy; 2025 Chanchal Rai | All Rights Reserved
+  &copy; 2025 Chanchal Rai | All Rights Reserved
 </footer>
+
+<!-- AOS Animation Script -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
